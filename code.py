@@ -61,7 +61,7 @@ st.set_page_config(layout='wide', page_title="PDF Summarizatio App")
 
 
 def main():
-    st.title('📄PDF Summarization App using LangChain LLM')
+    st.title('📄PDF Summarization App using Language Model')
 
     uploaded_file = st.file_uploader("Upload your PDF",type = ['pdf'])
 
