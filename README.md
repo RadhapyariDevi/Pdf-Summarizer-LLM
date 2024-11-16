@@ -24,7 +24,7 @@ The goal of this project is to gain hands-on experience with **Streamlit**, **La
 ## How it Works
 
 ### Model
-The app is using **LaMini-Flan-T5-248M**, a fine-tuned version of `google/flan-t5-base` on the **LaMini-instruction dataset** that contains 2.58M samples for instruction fine-tuning.
+The app is using **[LaMini-Flan-T5-248M](https://huggingface.co/MBZUAI/LaMini-Flan-T5-248M/tree/main)**, a fine-tuned version of `google/flan-t5-base` on the **LaMini-instruction dataset** that contains 2.58M samples for instruction fine-tuning.
 
 The LLM **LaMini-Flan-T5-248M** is installed within the project directory for easy integration and use.
 
@@ -35,6 +35,17 @@ LangChain’s T5 Tokenizer is used to load the model’s associated tokenizer fo
 Upload a PDF file to the app. The file is processed using PyPDFLoader and splits it into text chunks. The text  is then summarized using the model.
 The app uses the Hugging Face pipeline for summarisation and LangChain to integrate the PDF loader and model processing. After the PDF is processed, the app generates a summary of the content
 
+## How to use
+
+1. Download The **[LaMini-Flan-T5-248M](https://huggingface.co/MBZUAI/LaMini-Flan-T5-248M/tree/main)** workspace from the official repository within the project directory for easy access.
+2. Install the requirements.txt
+   ```python
+    pip install -r requirements.txt
+   ```
+4. Host the app in the local browser
+   ```python
+   streamlit run code.py
+   ```
 
 ## Summary
 
